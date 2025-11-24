@@ -1,0 +1,22 @@
+@token = {{login.response.body.token}}
+// Authorization: Bearer {{token}}
+
+### Register
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "email": "titkosjelszo@gmail.hu",
+    "password": "Titkosjelszo123",
+    "passwordConfirm": "Titkosjelszo123"
+}
+
+### Login
+# @name login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "titkosjelszo@gmail.hu",
+    "password": "Titkosjelszo123"
+}
